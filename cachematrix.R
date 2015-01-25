@@ -2,9 +2,19 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## makeCacheMatrix stores the matrix and the mean, also describes the setters and getters.
 makeCacheMatrix <- function(x = matrix()) {
-
+  m <- NULL
+  set <- function(y) {
+    x <<- y
+    m <<- NULL
+  }
+  get <- function() x
+  setmean <- function(mean) m <<- mean
+  getmean <- function() m
+  list(set = set, get = get,
+       setmean = setmean,
+       getmean = getmean)
 }
 
 
