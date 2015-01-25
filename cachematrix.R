@@ -1,7 +1,8 @@
 ## This set of functions will create an object called CacheMatrix which contains a Matrix and the Inverse Matrix cached.
 ## There is a function to create the object, and other to calculate the inverse and cache it for further use.
+## Keep in mind that the Matrix is assumed to be invertible and square.
 
-## I consider using the library MASS to be able to calculate the inverse matrix of square and non square matrixs,
+## I consider using the library MASS to be able to calculate the inverse matrix of square and non square matrixes,
 ## but according to assingment description we should assume that the matrix is invertible, that means a square matrix.
 ## library(MASS)
 ## inv <- ginv(data, ...)
